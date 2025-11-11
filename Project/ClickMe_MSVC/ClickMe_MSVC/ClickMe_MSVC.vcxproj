@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19150dd6-f5f4-40d4-9114-2f64aebb282e}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ClickMe_MSVC</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerEnvironment>PATH=$(ProjectDir)..\..\..\FT_Eve_Hal\Bin;%PATH%</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EVE_GRAPHICS_ME817EV;EVE_DISPLAY_WXGA;EVE_PLATFORM_FT4222;EVE_TOUCH_FOCAL;EVE_SPICHANNEL_QUAD;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\ClickMe;$(SolutionDir)..\..\FT_Eve_Hal;$(SolutionDir)..\..\FT_Esd_Widgets;$(SolutionDir)..\..\FT_Esd_Framework;$(SolutionDir)..\..\Esd_Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ftd2xx.lib;LibFT4222.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\FT_Eve_Hal\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+	<PostBuildEvent>
+      <Command>COPY "$(ProjectDir)..\..\..\FT_Eve_Hal\Bin\LibFT4222.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>EVE_GRAPHICS_ME817EV;EVE_DISPLAY_WXGA;EVE_PLATFORM_FT4222;EVE_TOUCH_FOCAL;EVE_SPICHANNEL_QUAD;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\ClickMe;$(SolutionDir)..\..\FT_Eve_Hal;$(SolutionDir)..\..\FT_Esd_Widgets;$(SolutionDir)..\..\FT_Esd_Framework;$(SolutionDir)..\..\Esd_Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ftd2xx.lib;LibFT4222.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\FT_Eve_Hal\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+	<PostBuildEvent>
+      <Command>COPY "$(ProjectDir)..\..\..\FT_Eve_Hal\Bin\*.dll" $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include = "..\..\..\ClickMe\App__Generated.c"/>
+    <ClCompile Include = "..\..\..\ClickMe\DefaultTheme.c"/>
+    <ClCompile Include = "..\..\..\ClickMe\AppScreen__Generated.c"/>
+    <ClCompile Include = "..\..\..\ClickMe\FirstPage__Generated.c"/>
+    <ClCompile Include = "..\..\..\ClickMe\Usr_Page__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_Cmd.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd_State.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_FT4222.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_FT9XX.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd__h__Simulation.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoDl.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs_FT80X.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs_BT82X.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs_BT81X.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd_IO.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs_FT81X.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_BT8XXEMU.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_BT8XXEMUC.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_RP2040.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_STM32.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd_Widgets.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_Hal.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_WIN32.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_LoadFile_STDIO.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_KD2401.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_Util.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_Util_Desktop.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_IDP_4000_04A_RP2040.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_MediaFifo.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_ILI9488_RP2040.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_ILI9488_FT9XX.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_LoadFile_FATFS.c"/>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_IDM2040_21R_RP2040.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TouchPanel__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_SlideShow__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_Rotate__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollPanel__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSliderInterval__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SpinBox__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollSwitch__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Ring__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSlider__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Sketch__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollBar__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Rectangle__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollableImageWidget__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Slider__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Theme_DarkOrange.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RSSIBar__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SignalSwitch__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Toggle__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Theme_LightBlue.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Joypad__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Numberpad__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_QRCode__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PolygonWidget__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SlidingButton__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Animation__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RingSlider__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FixedPointNumericLabel.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LinearRoller.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioButton.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollingText.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioGroup.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollBar.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollPanel.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Arc.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LabelButton.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircleLine.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcSlider.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Cgradient.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradientSlider.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradient.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcLine.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularSlider.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FontIcon.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient_Arc_Line.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Elements.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Glow.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_Rotate.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Video.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ColorPicker.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TextBox.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_NumericLabel.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ProgressBar.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Layout_Dynamic_Switch.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Sketch.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSlider.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RingSlider.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Numberpad.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SlidingButton.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Animation.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RSSIBar.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\qrcodegen.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Joypad.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSliderInterval.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_QRCode.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Toggle.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollSwitch.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Slider.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PolygonWidget.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SignalSwitch.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient_Arc_Line__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Arc__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcLine__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CheckBox__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradientSlider__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircleLine__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle_Raised__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle_Sunken__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularSlider__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcSlider__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Cgradient__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradient__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gauge__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ColorPicker__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Glow__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FontIcon__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Clock__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FixedPointNumericLabel__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_IntCounter__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_MultiGradientRounded__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TextBox__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollingText__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Video__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Line__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Label__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LinearRoller__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LabelButton__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ImageButton__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Spinner__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Raised__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_NumericLabel__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Sunken__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PartialRing__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Color__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PosSizeToRadius__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioButton__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ProgressBar__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PushButton__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioGroup__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Display.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchScrollLogic.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchTagRenderInterface.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchArea.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Support.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Theme.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Timer.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Tag.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Theme.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Widget.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Widget_Utils.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_RenderTarget.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_AutoSwitch.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Linear.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Fill.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Scroll.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Switch.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Fixed.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Stretch__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_RenderForwarder__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchScrollLogic__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Timer__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchArea__Generated.c"/>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_IdleChecker__Generated.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_BitmapInfo.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_AnimationInfo.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_FontInfo.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_CheckTypeSizes.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Context.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_LittleFS.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_MemoryPool.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_GpuAlloc.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Math.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Base.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_BitmapHandle.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_CoWidget.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render_Rect.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Utility.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_TouchTag.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_RenderTargetState.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render_Bitmap.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Support.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render_Gradient.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render_Circle.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Scissor.c"/>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_ResourceInfo.c"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include = "..\..\..\ClickMe\App.h"/>
+    <ClInclude Include = "..\..\..\ClickMe\DefaultTheme.h"/>
+    <ClInclude Include = "..\..\..\ClickMe\AppScreen.h"/>
+    <ClInclude Include = "..\..\..\ClickMe\FirstPage.h"/>
+    <ClInclude Include = "..\..\..\ClickMe\Usr_Page.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Gpu.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_Gpu_Hal.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_Platform.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Hal_Config.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\bt8xxemu.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_LoadFile.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\ftd2xx.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Gpu_CoCmd.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Gpu_Hal.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\bt8xxemu_inttypes.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\LibFT4222.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_DataTypes.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_Gpu.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Hal.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\WinTypes.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_CoDl.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Platform.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Compat.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Cmd.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_GpuTypes.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_HalDefs.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Config.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\libMPSSE_spi.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_MPSSE.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_RP2040.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_WIN32.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_KD2401.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_FT9XX.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Util.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_STM32.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_ILI9488.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_IDP_4000_04A.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_LoadFile.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_MediaFifo.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_IDM2040_21R.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_BT8XXEMU.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_IntTypes.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_IntTypes_MSVC12.h"/>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_FT4222.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TouchPanel.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_SlideShow.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_Rotate.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollPanel.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSliderInterval.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SpinBox.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollSwitch.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Ring.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSlider.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Sketch.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollBar.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Rectangle.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollableImageWidget.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Slider.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Theme_DarkOrange.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RSSIBar.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SignalSwitch.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Toggle.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Theme_LightBlue.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Joypad.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Numberpad.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_QRCode.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PolygonWidget.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SlidingButton.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Animation.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RingSlider.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_DefaultTheme.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Elements.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Layout_Dynamic_Switch.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\qrcodegen.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient_Arc_Line.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Arc.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcLine.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CheckBox.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradientSlider.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircleLine.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle_Raised.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle_Sunken.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularSlider.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcSlider.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Cgradient.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradient.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gauge.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ColorPicker.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Glow.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FontIcon.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Clock.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FixedPointNumericLabel.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_IntCounter.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_MultiGradientRounded.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TextBox.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollingText.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Video.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Line.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Label.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LinearRoller.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LabelButton.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ImageButton.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Spinner.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Raised.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_NumericLabel.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Sunken.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PartialRing.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Color.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PosSizeToRadius.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioButton.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ProgressBar.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PushButton.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioGroup.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Theme.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Theme.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Tag.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Widget.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_RenderTarget.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchTagRenderInterface.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_ResourceInfo.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchTag.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_AutoSwitch.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Utility.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Primitives.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_CoPro_Cmds.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_BitmapInfo.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Dl.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_BitmapHandle.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_GpuAlloc.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Math.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_CoCmd.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Core.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_FontInfo.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\CoPro_Cmds.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Display.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Linear.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Scroll.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Switch.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Fixed.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Fill.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Stretch.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_RenderForwarder.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchScrollLogic.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Timer.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchArea.h"/>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_IdleChecker.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Core.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Context.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_FontInfo.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_BitmapHandle.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_CoWidget.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_GpuAlloc.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Math.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_MemoryPool.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_LittleFS.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_AnimationInfo.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_BitmapInfo.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Base.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_ResourceInfo.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_TouchTag.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Render.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Utility.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Scissor.h"/>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_RenderTargetState.h"/>
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

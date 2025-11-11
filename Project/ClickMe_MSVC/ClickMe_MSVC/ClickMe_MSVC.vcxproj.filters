@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+	  <Filter Include="ClickMe">
+    <UniqueIdentifier>{0ff2eff8-6955-4060-aac1-2ec7b2223172}</UniqueIdentifier>
+    <Extensions>cpp;c;cc;cxx;h;hh;hpp;hxx</Extensions>
+  </Filter>
+  <Filter Include="FT_Eve_Hal">
+    <UniqueIdentifier>{288ff0aa-7a34-473c-99e6-8fd747a0dce1}</UniqueIdentifier>
+    <Extensions>cpp;c;cc;cxx;h;hh;hpp;hxx</Extensions>
+  </Filter>
+  <Filter Include="FT_Esd_Widgets">
+    <UniqueIdentifier>{cf678b6e-a70f-478c-9663-95a856962ce0}</UniqueIdentifier>
+    <Extensions>cpp;c;cc;cxx;h;hh;hpp;hxx</Extensions>
+  </Filter>
+  <Filter Include="FT_Esd_Framework">
+    <UniqueIdentifier>{132d0ff8-1b37-47f8-8076-dd6c4785670f}</UniqueIdentifier>
+    <Extensions>cpp;c;cc;cxx;h;hh;hpp;hxx</Extensions>
+  </Filter>
+  <Filter Include="Esd_Core">
+    <UniqueIdentifier>{254da826-6eee-4b36-a998-7f8f87c13292}</UniqueIdentifier>
+    <Extensions>cpp;c;cc;cxx;h;hh;hpp;hxx</Extensions>
+  </Filter>
+
+  </ItemGroup>
+    <ItemGroup>
+    <ClCompile Include = "..\..\..\ClickMe\App__Generated.c">
+      <Filter>ClickMe</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\ClickMe\App.h">
+      <Filter>ClickMe</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\ClickMe\DefaultTheme.c">
+      <Filter>ClickMe</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\ClickMe\DefaultTheme.h">
+      <Filter>ClickMe</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\ClickMe\AppScreen__Generated.c">
+      <Filter>ClickMe</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\ClickMe\AppScreen.h">
+      <Filter>ClickMe</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\ClickMe\FirstPage__Generated.c">
+      <Filter>ClickMe</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\ClickMe\FirstPage.h">
+      <Filter>ClickMe</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\ClickMe\Usr_Page__Generated.c">
+      <Filter>ClickMe</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\ClickMe\Usr_Page.h">
+      <Filter>ClickMe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Gpu.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_Gpu_Hal.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_Platform.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Hal_Config.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\bt8xxemu.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_LoadFile.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\ftd2xx.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Gpu_CoCmd.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Gpu_Hal.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\bt8xxemu_inttypes.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\LibFT4222.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_DataTypes.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Ft_Gpu.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_Cmd.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd_State.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Hal.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_FT4222.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\WinTypes.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_FT9XX.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd__h__Simulation.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoDl.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_CoDl.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs_FT80X.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\Platform.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs_BT82X.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Compat.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs_BT81X.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd_IO.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Cmd.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_GpuDefs_FT81X.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_GpuTypes.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_HalDefs.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_BT8XXEMU.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_BT8XXEMUC.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_RP2040.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_STM32.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_CoCmd_Widgets.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Config.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_Hal.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_HalImpl_WIN32.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\libMPSSE_spi.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_MPSSE.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_LoadFile_STDIO.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_RP2040.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_WIN32.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_KD2401.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_KD2401.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_Util.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_Util_Desktop.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_FT9XX.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Util.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_IDP_4000_04A_RP2040.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_MediaFifo.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_STM32.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_ILI9488.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_IDP_4000_04A.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_ILI9488_RP2040.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_LoadFile.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_MediaFifo.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_IDM2040_21R.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_BT8XXEMU.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_ILI9488_FT9XX.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_IntTypes.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_IntTypes_MSVC12.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_LoadFile_FATFS.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Eve_Hal\EVE_Platform_FT4222.h">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Eve_Hal\EVE_IDM2040_21R_RP2040.c">
+      <Filter>FT_Eve_Hal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TouchPanel__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TouchPanel.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_SlideShow__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_SlideShow.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_Rotate__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_Rotate.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollPanel__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollPanel.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSliderInterval__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSliderInterval.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SpinBox__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SpinBox.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollSwitch__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollSwitch.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Ring__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Ring.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSlider__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSlider.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Sketch__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Sketch.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollBar__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollBar.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Rectangle__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Rectangle.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollableImageWidget__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollableImageWidget.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Slider__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Slider.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Theme_DarkOrange.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Theme_DarkOrange.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RSSIBar__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RSSIBar.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SignalSwitch__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SignalSwitch.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Toggle__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Toggle.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Theme_LightBlue.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Theme_LightBlue.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Joypad__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Joypad.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Numberpad__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Numberpad.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_QRCode__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_QRCode.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PolygonWidget__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PolygonWidget.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SlidingButton__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SlidingButton.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Animation__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Animation.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RingSlider__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RingSlider.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FixedPointNumericLabel.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LinearRoller.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioButton.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollingText.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioGroup.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollBar.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollPanel.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_DefaultTheme.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Arc.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LabelButton.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircleLine.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcSlider.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Cgradient.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradientSlider.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradient.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcLine.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularSlider.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FontIcon.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient_Arc_Line.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Elements.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Glow.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Image_Rotate.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Video.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ColorPicker.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Elements.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TextBox.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_NumericLabel.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ProgressBar.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Layout_Dynamic_Switch.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Sketch.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSlider.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RingSlider.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Numberpad.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SlidingButton.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Layout_Dynamic_Switch.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Animation.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RSSIBar.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\qrcodegen.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\qrcodegen.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Joypad.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RangeSliderInterval.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_QRCode.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Toggle.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollSwitch.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Slider.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PolygonWidget.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_SignalSwitch.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient_Arc_Line__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gradient_Arc_Line.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Arc__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Arc.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcLine__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcLine.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CheckBox__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CheckBox.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradientSlider__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradientSlider.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircleLine__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircleLine.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle_Raised__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle_Raised.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle_Sunken__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle_Sunken.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularSlider__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularSlider.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcSlider__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ArcSlider.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Circle.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Cgradient__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Cgradient.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradient__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_CircularGradient.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gauge__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Gauge.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ColorPicker__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ColorPicker.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Glow__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Glow.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FontIcon__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FontIcon.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Clock__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Clock.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FixedPointNumericLabel__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_FixedPointNumericLabel.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_IntCounter__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_IntCounter.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_MultiGradientRounded__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_MultiGradientRounded.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TextBox__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_TextBox.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollingText__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ScrollingText.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Video__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Video.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Line__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Line.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Label__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Label.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LinearRoller__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LinearRoller.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LabelButton__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_LabelButton.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ImageButton__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ImageButton.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Spinner__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Spinner.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Raised__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Raised.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_NumericLabel__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_NumericLabel.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Sunken__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Sunken.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PartialRing__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PartialRing.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Color__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel_Color.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_Panel.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PosSizeToRadius__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PosSizeToRadius.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioButton__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioButton.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ProgressBar__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_ProgressBar.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PushButton__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_PushButton.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioGroup__Generated.c">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Widgets\Ft_Esd_RadioGroup.h">
+      <Filter>FT_Esd_Widgets</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Display.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchScrollLogic.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchTagRenderInterface.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchArea.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Support.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Theme.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Theme.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Theme.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Timer.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Tag.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Tag.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Theme.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Widget.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Widget.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Widget_Utils.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_RenderTarget.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_RenderTarget.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchTagRenderInterface.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_ResourceInfo.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchTag.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_AutoSwitch.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Utility.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_AutoSwitch.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Primitives.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_CoPro_Cmds.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_BitmapInfo.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Dl.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_BitmapHandle.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_GpuAlloc.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Math.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_CoCmd.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Core.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_FontInfo.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\CoPro_Cmds.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Display.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Linear.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Linear.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Fill.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Scroll.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Scroll.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Switch.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Fixed.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Switch.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Fixed.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Fill.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Stretch__Generated.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Layout_Stretch.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_RenderForwarder__Generated.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_RenderForwarder.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchScrollLogic__Generated.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchScrollLogic.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Timer__Generated.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_Timer.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchArea__Generated.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_TouchArea.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\FT_Esd_Framework\Ft_Esd_IdleChecker__Generated.c">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\FT_Esd_Framework\Ft_Esd_IdleChecker.h">
+      <Filter>FT_Esd_Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Core.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_BitmapInfo.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_AnimationInfo.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Context.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_FontInfo.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_CheckTypeSizes.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_FontInfo.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_BitmapHandle.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Context.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_CoWidget.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_GpuAlloc.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_LittleFS.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Math.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_MemoryPool.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_GpuAlloc.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_MemoryPool.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Math.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_LittleFS.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_AnimationInfo.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_BitmapInfo.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Base.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Base.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_BitmapHandle.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_CoWidget.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render_Rect.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Utility.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_ResourceInfo.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_TouchTag.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_TouchTag.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_RenderTargetState.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render_Bitmap.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Support.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render_Gradient.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Render.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Render_Circle.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Utility.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_Scissor.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_Scissor.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClInclude Include = "..\..\..\Esd_Core\Esd_RenderTargetState.h">
+      <Filter>Esd_Core</Filter>
+    </ClInclude>
+    <ClCompile Include = "..\..\..\Esd_Core\Esd_ResourceInfo.c">
+      <Filter>Esd_Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+</Project>
